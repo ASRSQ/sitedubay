@@ -7,126 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Configuração da fonte */
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* Configurações gerais do carrossel */
-        .carousel {
-            margin: 0 auto; /* Centraliza o carrossel */
-            max-width: 100%; /* O carrossel ocupa 80% da largura da tela */
-        }
-
-        .carousel-inner {
-            position: relative;
-            overflow: hidden; /* Evita que imagens maiores ultrapassem o carrossel */
-        }
-
-        .carousel-inner img {
-            width: 100%; /* Ajusta a imagem à largura do carrossel */
-            height: auto; /* Mantém a proporção original da imagem */
-            max-height: 80vh; /* Limita a altura da imagem a 80% da altura da tela */
-        }
-
-        /* Ajustes para telas grandes */
-        @media (min-width: 992px) {
-            .carousel {
-                max-width: 70%; /* Ajusta o tamanho do carrossel em telas grandes */
-            }
-        }
-        h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        /* Fundo amarelo para a seção */
-        .team-section {
-            background-color: #ffcc00;
-            padding: 50px 20px;
-        }
-
-        .team-container {
-            text-align: center;
-        }
-
-        .team-member {
-            display: inline-block;
-            margin: 15px;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border: 3px solid white;
-        }
-
-        .team-member p {
-            margin-top: 10px;
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
-
-        .images-container img {
-            width: 100%;
-            margin-top: 20px;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-           /* Seções de Serviços */
-        /* Estilo geral para os itens de serviço */
-        .service-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas fixas */
-    gap: 10px; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os itens */
-    margin-bottom: 30px;
-}
-
-.service-item {
-    display: flex;
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    background-color: #ffcc00; /* Fundo amarelo */
-    border-radius: 10px;
-    padding: 5px 15px; /* Espaçamento interno do retângulo */
-    color: #000;
-    font-weight: bold;
-    
-    width: 87%; /* Ajusta para caber na coluna */
-    height: 50px; /* Define uma altura fixa */
-    position: relative; /* Permite posicionamento do círculo */
-}
-
-.service-item img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; /* Garante que o círculo seja perfeito */
-    background-color: #000; /* Fundo preto */
-    box-shadow: 0 0 0 5px #fff; /* Borda externa branca */
-    position: absolute; /* Posiciona o círculo independentemente do layout */
-    left: -10px; /* Move o círculo para a ponta esquerda */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta para o centro exato */
-}
-
-.service-item .service-name {
-    display: flex;
-    align-items: center; /* Centraliza verticalmente o texto */
-    margin-left: 35px; /* Espaçamento entre o texto e o círculo */
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-
-
-
-    </style>
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+  
 </head>
 <body>
     <!-- Div principal para todo o layout -->
@@ -217,89 +99,40 @@
         </section>
     </div>
     <!-- Título -->
-    <div class="container py-5">
+
+    <div class="service-section">
     <h2 class="text-center mb-5">Nossos Serviços</h2>
+        <!-- Serviços -->
+        <div class="service-box">
 
-    <!-- Categoria: Barbas -->
-    <h3 class="text-center mb-4">Barbas</h3>
-    <div class="service-grid">
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Barba Completa</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Barba Simples</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Barba Pigmentada</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Barba Terapia</div>
-        </div>
-    </div>
+            <div class="service-grid-container">
+                <!-- Categoria: Barbas -->
+                <h3 class="text-center mb-4">Barbas</h3>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                        <div class="service-name">Barba Completa</div>
+                    </div>
+                    <div class="service-item">
+                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                        <div class="service-name">Barba Simples</div>
+                    </div>
+                </div>
 
-    <!-- Categoria: Cortes -->
-    <h3 class="text-center mb-4">Cortes</h3>
-    <div class="service-grid">
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Corte Degradê</div>
+                <!-- Categoria: Cortes -->
+                <h3 class="text-center mb-4">Cortes</h3>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                        <div class="service-name">Corte Degradê</div>
+                    </div>
+                    <div class="service-item">
+                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                        <div class="service-name">Corte Freestyle</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Corte Freestyle</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Corte Infantil</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Corte Social</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Degradê Pigmentado</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Corte na Tesoura</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Sobrancelhas</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Degradê Lateral</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Pezinho</div>
-        </div>
-    </div>
-
-    <!-- Categoria: Combos -->
-    <h3 class="text-center mb-4">Combos</h3>
-    <div class="service-grid">
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Degradê + Barba</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Social + Barba Simples</div>
-        </div>
-        <div class="service-item">
-            <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-            <div class="service-name">Social + Barba</div>
-        </div>
-    </div>
-</div>
-
 
         <!-- Galeria -->
         <div class="gallery-container">
@@ -310,16 +143,9 @@
         </div>
     </div>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-4">
-            <div class="container text-center">
-                <p>Horários de Funcionamento: Seg-Sáb: 08:00 - 18:00</p>
-                <p>Formas de Pagamento: Dinheiro, Cartão</p>
-                <p>Contatos: (xx) xxxx-xxxx</p>
-                <p>Endereço: Rua Exemplo, 123 - Cidade</p>
-            </div>
-        </footer>
-    </div>
+
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
