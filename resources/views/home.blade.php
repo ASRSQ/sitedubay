@@ -101,38 +101,98 @@
     <!-- Título -->
 
     <div class="service-section">
-    <h2 class="text-center mb-5">Nossos Serviços</h2>
-        <!-- Serviços -->
-        <div class="service-box">
+   <h2 class="text-center mb-5" style="font-family: 'Montserrat', sans-serif; font-weight: 800; line-height: 1.2;">
+    <span style="display: block; font-size: 2rem; color: #fff;">Nossos</span>
+    <span style="display: block; font-size: 2.5rem; color: #ffcc00;">Serviços</span>
+</h2>
 
-            <div class="service-grid-container">
-                <!-- Categoria: Barbas -->
-                <h3 class="text-center mb-4">Barbas</h3>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-                        <div class="service-name">Barba Completa</div>
-                    </div>
-                    <div class="service-item">
-                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-                        <div class="service-name">Barba Simples</div>
-                    </div>
+
+       <!-- Serviços -->
+<div class="service-box">
+    <div class="service-grid-container">
+
+        <!-- Categoria: Barbas -->
+        <h3 class="text-center mb-4">Barbas</h3>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                <div class="service-name">Barba Completa</div>
+            </div>
+            <div class="service-item">
+                <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                <div class="service-name">Barba Simples</div>
+            </div>
+            <div class="service-item">
+                <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                <div class="service-name">Barba Pigmentada</div>
+            </div>
+            <div class="service-item">
+                <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                <div class="service-name">Barba Terapia</div>
+            </div>
+        </div>
+
+            <!-- Categoria: Cortes -->
+            <h3 class="text-center mb-4">Cortes</h3>
+            <div class="service-grid">
+                
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Corte Degradê</div>
                 </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Corte Freestyle</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Corte Infantil</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Corte Social</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Degradê Pigmentado</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Corte na Tesoura</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Sobrancelhas</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Degradê Lateral</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Pezinho</div>
+                </div>
+            </div>
 
-                <!-- Categoria: Cortes -->
-                <h3 class="text-center mb-4">Cortes</h3>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-                        <div class="service-name">Corte Degradê</div>
-                    </div>
-                    <div class="service-item">
-                        <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
-                        <div class="service-name">Corte Freestyle</div>
-                    </div>
+            <!-- Categoria: Combos -->
+            <h3 class="text-center mb-4">Combos</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Degradê + Barba</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Social + Barba Simples</div>
+                </div>
+                <div class="service-item">
+                    <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
+                    <div class="service-name">Social + Barba</div>
                 </div>
             </div>
         </div>
+    </div>
+
 
         <!-- Galeria -->
         <div class="gallery-container">
