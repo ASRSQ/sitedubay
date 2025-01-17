@@ -114,6 +114,7 @@
         <!-- Categoria: Barbas -->
         <h3 class="text-center mb-4">Barbas</h3>
         <div class="service-grid">
+            
             <div class="service-item">
                 <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
                 <div class="service-name">Barba Completa</div>

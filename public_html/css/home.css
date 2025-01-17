@@ -105,64 +105,65 @@ object-fit: cover;
 
 /* Grid de serviços */
 .service-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-gap: 15px; /* Espaçamento entre os itens */
-}
-
-/* Itens de serviço */
-/* Itens de serviço */
-/* Itens de serviço */
-.service-item {
-    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
-    display: flex; /* Para alinhar o texto e a imagem */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    background-color: #ffcc00; /* Fundo amarelo */
-    border-radius: 18px; /* Arredonda os cantos do retângulo */
-    color: #000; /* Cor do texto */
-    font-weight: bold; /* Texto em negrito */
-    height: 55px; /* Altura do retângulo */
-    padding-left: 70px; /* Espaço interno à esquerda para o círculo e a imagem */
-    padding-right: 20px; /* Espaço interno à direita */
-    width: 150px; /* Largura fixa do retângulo */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
-}
-
-.service-item::before {
-    content: '';
-    position: absolute;
-    width: 60px; /* Largura do círculo */
-    height: 60px; /* Altura do círculo */
-    background-color: #fff; /* Cor branca para o círculo */
-    border-radius: 50%; /* Torna o elemento circular */
-    top: 50%; /* Centraliza verticalmente */
-    left: -5px; /* Ajusta para criar o efeito de "recorte" */
-    transform: translateY(-50%); /* Centraliza perfeitamente o círculo */
-}
-
-/* Círculo da imagem */
-.service-item img {
-    position: absolute;
-    width: 50px; /* Largura da imagem */
-    height: 50px; /* Altura da imagem */
-    border-radius: 50%; /* Garante o formato circular */
-    background-color: #000; /* Fundo preto */
-    /* box-shadow: 0 0 0 5px #fff; Borda branca para a imagem */
-    top: 50%; /* Centraliza verticalmente */
-    left: 10px; /* Centraliza horizontalmente dentro do círculo */
-    transform: translate(-30%, -50%); /* Ajusta a posição final */
-}
-
-/* Nome do serviço */
-.service-name {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente dentro da célula */
-    align-items: center; /* Centraliza verticalmente dentro da célula */
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-align: center;
-    width: 100%; /* Garante que o texto ocupe toda a célula */
-    height: 100%; /* Garante que o texto ocupe toda a célula */
-    box-sizing: border-box; /* Inclui padding na largura */
-    margin-left: 4px; /* Espaçamento entre o círculo e o texto */
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 15px; /* Espaçamento entre os itens */
+    }
+    
+    /* Itens de serviço */
+    /* Itens de serviço */
+    /* Itens de serviço */
+    .service-item {
+        position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+        display: flex; /* Para alinhar o texto e a imagem */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        background-color: #ffcc00; /* Fundo amarelo */
+        border-radius: 18px; /* Arredonda os cantos do retângulo */
+        color: #000; /* Cor do texto */
+        font-weight: bold; /* Texto em negrito */
+        height: 55px; /* Altura do retângulo */
+        padding-left: 70px; /* Espaço interno à esquerda para o círculo e a imagem */
+        padding-right: 20px; /* Espaço interno à direita */
+        width: 100%; /* Largura fixa do retângulo */
+        /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); Adiciona uma sombra */
+    }
+    
+    .service-item::before {
+        content: '';
+        position: absolute;
+        width: 60px; /* Largura do círculo */
+        height: 60px; /* Altura do círculo */
+        background-color: #fff; /* Cor branca para o círculo */
+        border-radius: 50%; /* Torna o elemento circular */
+        top: 50%; /* Centraliza verticalmente */
+        left: -5px; /* Ajusta para criar o efeito de "recorte" */
+        transform: translateY(-50%); /* Centraliza perfeitamente o círculo */
+    }
+    
+    /* Círculo da imagem */
+    .service-item img {
+        position: absolute;
+        width: 50px; /* Largura da imagem */
+        height: 50px; /* Altura da imagem */
+        border-radius: 50%; /* Garante o formato circular */
+        background-color: #000; /* Fundo preto */
+        /* box-shadow: 0 0 0 5px #fff; Borda branca para a imagem */
+        top: 50%; /* Centraliza verticalmente */
+        left: 10px; /* Centraliza horizontalmente dentro do círculo */
+        transform: translate(-30%, -50%); /* Ajusta a posição final */
+    }
+    
+    /* Nome do serviço */
+    .service-name {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente dentro da célula */
+        align-items: center; /* Centraliza verticalmente dentro da célula */
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-align: center;
+        width: 100%; /* Garante que o texto ocupe toda a célula */
+        height: 100%; /* Garante que o texto ocupe toda a célula */
+        box-sizing: border-box; /* Inclui padding na largura */
+        margin-left: 4px; /* Espaçamento entre o círculo e o texto */
+    }
+    
