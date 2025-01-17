@@ -92,24 +92,31 @@ background-color: #ffcc00; /* Fundo amarelo */
 border-radius: 0 0 15px 15px; /* Bordas arredondadas na parte inferior */
 padding: 30px; /* Espaçamento interno */
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsivo */
+grid-template-columns: repeat(2, 1fr); /* Define duas colunas */
+grid-template-rows: repeat(2, auto); /* Define duas linhas */
 gap: 10px;
 }
 
 /* Imagens da galeria */
 .gallery-container img {
-width: 100%;
-border-radius: 10px;
-object-fit: cover;
+    width: 100%; /* Faz a imagem ocupar todo o espaço do item */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    object-fit: cover; /* Corta e ajusta a imagem ao espaço do item */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
 }
 
 /* Grid de serviços */
-.service-grid {
+.service-grid-barbas {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Duas colunas */
     gap: 15px; /* Espaçamento entre os itens */
     }
-    
+    .service-grid{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 15px; /* Espaçamento entre os itens */
+        }
     /* Itens de serviço */
     /* Itens de serviço */
     /* Itens de serviço */
@@ -124,7 +131,7 @@ object-fit: cover;
         height: 55px; /* Altura do retângulo */
         padding-left: 70px; /* Espaço interno à esquerda para o círculo e a imagem */
         padding-right: 20px; /* Espaço interno à direita */
-        width: 90%; /* Largura fixa do retângulo */
+        width: 150px; /* Largura fixa do retângulo */
         /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); Adiciona uma sombra */
     }
     
@@ -164,6 +171,10 @@ object-fit: cover;
         width: 100%; /* Garante que o texto ocupe toda a célula */
         height: 100%; /* Garante que o texto ocupe toda a célula */
         box-sizing: border-box; /* Inclui padding na largura */
-        margin-left: 4px; /* Espaçamento entre o círculo e o texto */
+        margin-left: 0px; /* Espaçamento entre o círculo e o texto */
     }
-    
+ /* Último item centralizado */
+.service-grid > .service-item:last-child {
+    grid-column: 1 / 3; /* Faz o item ocupar as duas colunas */
+    justify-self: center; /* Centraliza o item horizontalmente na grade */
+}

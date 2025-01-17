@@ -113,7 +113,7 @@
 
         <!-- Categoria: Barbas -->
         <h3 class="text-center mb-4">Barbas</h3>
-        <div class="service-grid">
+        <div class="service-grid-barbas">
             
             <div class="service-item">
                 <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
@@ -134,7 +134,7 @@
         </div>
 
             <!-- Categoria: Cortes -->
-            <h3 class="text-center mb-4">Cortes</h3>
+            <h3 class="text-center mb-4 mt-3">Cortes</h3>
             <div class="service-grid">
                 
                 <div class="service-item">
@@ -176,7 +176,7 @@
             </div>
 
             <!-- Categoria: Combos -->
-            <h3 class="text-center mb-4">Combos</h3>
+            <h3 class="text-center mb-4 mt-3">Combos</h3>
             <div class="service-grid">
                 <div class="service-item">
                     <img src="{{ asset('image/logo.jpg') }}" alt="Logo">
@@ -197,10 +197,10 @@
 
         <!-- Galeria -->
         <div class="gallery-container">
-            <img src="{{ asset('image/gallery1.jpg') }}" alt="Galeria 1">
-            <img src="{{ asset('image/gallery2.jpg') }}" alt="Galeria 2">
-            <img src="{{ asset('image/gallery3.jpg') }}" alt="Galeria 3">
-            <img src="{{ asset('image/gallery4.jpg') }}" alt="Galeria 4">
+            <img src="{{ asset('image/galeria1.jpg') }}" alt="Galeria 1">
+            <img src="{{ asset('image/galeria2.jpg') }}" alt="Galeria 2">
+            <img src="{{ asset('image/galeria3.jpg') }}" alt="Galeria 3">
+            <img src="{{ asset('image/galeria4.jpg') }}" alt="Galeria 4">
         </div>
     </div>
 
