@@ -259,6 +259,42 @@
     </div>
 </section>
 
+<section class="form-section py-5">
+    <div class="container">
+        <div class="form-grid-container">
+            <!-- Título -->
+            <div class="form-title">
+                <h2 class="title">
+                    <span class="title-top">Cadastre-se</span>
+                </h2>
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-content">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome completo" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" placeholder="Data de nascimento" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Número de telefone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Endereço de email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Escrever uma mensagem" class="form-input" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
     <!-- Bootstrap JS -->
