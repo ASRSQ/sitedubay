@@ -522,7 +522,7 @@ gap: 10px;
     background-color: #ffcc00; /* Fundo amarelo */
     color: #000; /* Texto preto */
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px; /* Bordas arredondadas */
@@ -547,7 +547,7 @@ gap: 10px;
 }
 
 .payment-icons img {
-    height: 40px; /* Altura dos ícones */
+    height: 30px; /* Altura dos ícones */
     width: auto; /* Mantém a proporção */
     transition: transform 0.2s ease-in-out;
 }
