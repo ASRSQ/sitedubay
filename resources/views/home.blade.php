@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   
 </head>
 <body>
@@ -204,6 +206,47 @@
         </div>
     </div>
 
+<!-- Seção Baixe Nosso Aplicativo -->
+<section class="app-download-section py-5">
+    <div class="container">
+        <div class="app-grid-container">
+            <!-- Texto -->
+            <div class="app-text">
+                <h2 class="title">
+                    <span class="title-top">Baixe<br>nosso</span>
+                    <span class="title-bottom">Apli<br>cati<br>vo!</span>
+                </h2>
+            </div>
+
+
+            <!-- Imagens dos celulares -->
+            <div class="app-phone">
+                <img src="{{ asset('image/telefone.png') }}" alt="Aplicativo na App Store" >
+            </div>
+
+            <!-- QR Code -->
+            <div class="app-qrcode">
+                <img src="{{ asset('image/qrcode.png') }}" alt="QR Code" style="width: 150px;">
+                <p class="mt-2">Aponte a câmera do celular e faça o download!</p>
+            </div>
+
+            <!-- Links das lojas -->
+            <div class="app-links">
+                <p class="app-text-link">Disponível</p>
+                <a href="https://play.google.com" target="_blank" class="app-link">
+                    <div class="app-box">
+                        <img src="{{ asset('image/play.png') }}" alt="Google Play">
+                    </div>
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank" class="app-link">
+                    <div class="app-box">
+                        <img src="{{ asset('image/apple.png') }}" alt="App Store">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
