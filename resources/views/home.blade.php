@@ -261,7 +261,7 @@
 
 <section class="form-section py-5">
     <div class="container">
-        <div class="form-grid-container">
+        <div class="form-wrapper">
             <!-- Título -->
             <div class="form-title">
                 <h2 class="title">
@@ -293,6 +293,66 @@
         </div>
     </div>
 </section>
+<section class="schedule-section py-5">
+    <div class="container">
+        <h2 class="schedule-title">
+            Horário de <span>Funcionamento</span>
+        </h2>
+        <div class="schedule-table">
+            <!-- Segunda -->
+            <div class="schedule-row">
+                <div class="schedule-time">
+                    <div class="schedule-day">Segunda-Feira</div>
+                    <div class="schedule-time-content">08:30h - 19:00h</div>
+                </div>
+            </div>
+            <!-- Terça -->
+            <div class="schedule-row">
+                <div class="schedule-time">
+                    <div class="schedule-day">Terça-Feira</div>
+                    <div class="schedule-time-content">08:30h - 19:00h</div>
+                </div>
+            </div>
+            <!-- Quarta -->
+            <div class="schedule-row">
+                <div class="schedule-time">
+                    <div class="schedule-day">Quarta-Feira</div>
+                    <div class="schedule-time-content">08:30h - 19:00h</div>
+                </div>
+            </div>
+            <!-- Quinta -->
+            <div class="schedule-row">
+                <div class="schedule-time">
+                    <div class="schedule-day">Quinta-Feira</div>
+                    <div class="schedule-time-content">08:30h - 19:00h</div>
+                </div>
+            </div>
+            <!-- Sexta -->
+            <div class="schedule-row">
+                <div class="schedule-time">
+                    <div class="schedule-day">Sexta-Feira</div>
+                    <div class="schedule-time-content">08:30h - 19:00h</div>
+                </div>
+            </div>
+            <!-- Sábado -->
+            <div class="schedule-row">
+                <div class="schedule-time">
+                    <div class="schedule-day">Sábado</div>
+                    <div class="schedule-time-content">08:30h - 19:00h</div>
+                </div>
+            </div>
+            <!-- Domingo -->
+            <div class="schedule-row">
+                <div class="schedule-time closed">
+                    <div class="schedule-day">Domingo</div>
+                    <div class="schedule-time-content">Fechado</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
 
