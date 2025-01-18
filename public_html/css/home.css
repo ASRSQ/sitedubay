@@ -316,8 +316,3 @@ gap: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
 }
 
-.gallery-grid img:hover {
-    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
-}
-
