@@ -248,6 +248,16 @@
     </div>
 </section>
 
+<section class="app-gallery-section py-5">
+    <div class="container">
+        <div class="gallery-grid">
+            <img src="{{ asset('image/gallery1.png') }}" alt="Galeria 1">
+            <img src="{{ asset('image/gallery2.png') }}" alt="Galeria 2">
+            <img src="{{ asset('image/gallery3.png') }}" alt="Galeria 3">
+            <img src="{{ asset('image/gallery4.png') }}" alt="Galeria 4">
+        </div>
+    </div>
+</section>
 
 
 

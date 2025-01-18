@@ -292,3 +292,31 @@ gap: 10px;
     transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
 }
 
+/* Estilo da seção de galeria */
+.app-gallery-section {
+    background-color: #000; /* Fundo claro para contraste */
+}
+
+/* Grid da galeria */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta as colunas responsivamente */
+    gap: 15px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Espaçamento interno */
+    justify-items: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo das imagens */
+.gallery-grid img {
+    width: 100%; /* Ocupa todo o espaço da célula */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
