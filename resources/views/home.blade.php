@@ -351,6 +351,28 @@
         </div>
     </div>
 </section>
+<section class="payment-section py-5">
+    <div class="container text-center">
+        <h2 class="payment-title">
+            Formas de <span>Pagamento</span>
+        </h2>
+        <div class="payment-options">
+            <div class="payment-method">Dinheiro</div>
+            <div class="payment-method">Pix</div>
+            <div class="payment-method">Aceitamos Cartões</div>
+            <div class="payment-method">Débito</div>
+            <div class="payment-method">Crédito</div>
+        </div>
+        <div class="payment-icons mt-4">
+            <img src="{{ asset('image/visa.png') }}" alt="Visa">
+            <img src="{{ asset('image/mastercard.png') }}" alt="Mastercard">
+            <img src="{{ asset('image/elo.png') }}" alt="Elo">
+            <img src="{{ asset('image/americanexpress.png') }}" alt="American Express">
+            <img src="{{ asset('image/hiper.png') }}" alt="Hiper">
+            <img src="{{ asset('image/hipercard.png') }}" alt="Hipercard">
+        </div>
+    </div>
+</section>
 
 
 

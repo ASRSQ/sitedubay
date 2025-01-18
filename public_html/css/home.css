@@ -489,6 +489,72 @@ gap: 10px;
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
 }
+/* Estilo da seção de pagamento */
+.payment-section {
+    background-color: #000; /* Fundo preto */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Título */
+.payment-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.payment-title span {
+    color: #ffcc00; /* Destaque amarelo */
+}
+
+/* Opções de pagamento */
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os itens */
+    margin-bottom: 30px;
+}
+
+.payment-method {
+    background-color: #ffcc00; /* Fundo amarelo */
+    color: #000; /* Texto preto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease-in-out;
+}
+
+.payment-method:hover {
+    transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Ícones de pagamento */
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    background-color: #fff; /* Fundo branco */
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.payment-icons img {
+    height: 40px; /* Altura dos ícones */
+    width: auto; /* Mantém a proporção */
+    transition: transform 0.2s ease-in-out;
+}
+
+.payment-icons img:hover {
+    transform: scale(1.2); /* Aumenta levemente ao passar o mouse */
+}
 
 
 
