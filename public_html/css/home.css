@@ -237,11 +237,11 @@ gap: 10px;
 }
 
 .app-phone img {
-    width: 300px; /* Novo tamanho da largura */
+    width: 200px; /* Novo tamanho da largura */
     height: auto; /* Mantém a proporção */
     /* max-height: 220px; Limita a altura máxima */
     object-fit: contain; /* Ajusta a imagem para caber no container */
-    transform: translateX(-60px); /* Move a imagem 20px para a esquerda */
+    transform: translateX(-10px); /* Move a imagem 20px para a esquerda */
     margin-left: -10px; /* Adiciona margem negativa à esquerda */
 }
 
@@ -258,7 +258,7 @@ gap: 10px;
     color: #000;
     margin-bottom: 10px;
     text-align: center;
-    transform: translateX(-60px); 
+    transform: translateX(-10px); 
 }
 
 /* Estilo para cada link */
@@ -272,7 +272,7 @@ gap: 10px;
     transition: transform 0.2s, box-shadow 0.2s; /* Animação ao passar o mouse */
     width: 100%; /* Ajusta a largura */
     height: 100%; /* Ajusta a altura */
-    transform: translateX(-60px); 
+    transform: translateX(-10px); 
 
 }
 
