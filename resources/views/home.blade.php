@@ -360,8 +360,8 @@
             <div class="payment-method">Dinheiro</div>
             <div class="payment-method">Aceitamos Cartões</div>
             <div class="payment-method">Pix</div>
-            <div class="payment-method">Débito</div>
-            <div class="payment-method">Crédito</div>
+            <div style=" transform: translateX(20px);" class="payment-method">Débito</div>
+            <div style=" transform: translateX(15px);" class="payment-method">Crédito</div>
         </div>
         <div class="payment-icons mt-4">
             <img src="{{ asset('image/form_pg.png') }}" alt="pg">
@@ -369,8 +369,70 @@
         </div>
     </div>
 </section>
+<section class="contact-section py-5">
+    <div class="container text-center">
+        <!-- Título -->
+        <h2 class="contact-title">Contatos</h2>
+        
+        <!-- Contato WhatsApp -->
+        <div class="contact-item">
+            <a href="https://wa.me/5588998384312" target="_blank" class="contact-link">
+                <img src="{{ asset('image/whatsapp-icon.png') }}" alt="WhatsApp">
+                <span>(88) <strong>99838.4312</strong></span>
+            </a>
+        </div>
+        
+        <!-- Contato Instagram -->
+        <!-- Redes Sociais -->
+        <div class="contact-item">
+            <a href="https://instagram.com/barbearia_dubay" target="_blank" class="contact-link">
+                <div class="social-icons">
+                    <img src="{{ asset('image/facebook-icon.png') }}" alt="Facebook">
+                    <img src="{{ asset('image/instagram-icon.png') }}" alt="Instagram">
+                </div>
+                <span>@barbearia_dubay</span>
+            </a>
+        </div>
+    </div>
+   
+</section>
+<section class="location-section py-5">
+    <div class="container">
+        <!-- Título e Endereço -->
+        <div class="location-info text-center">
+            <h2 class="location-title">
+                Onde </br> <span>Estamos?</span>
+            </h2>
+            <div class="location-address">
+                <div class="address-icon">
+                    <img src="{{ asset('image/location-icon.png') }}" alt="Ícone de localização" style="width: 24px;">
+                </div>
+                <p class="address-text">
+                    Rua Tabelião Francisco de Paula Lobo, Piracicaba,<br>
+                    <strong>Santa Quitéria-Ce</strong>
+                </p>
+            </div>
+        </div>
 
+        <!-- Mapa Responsivo -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.394602460954!2d-40.15824222625318!3d-4.336790895637216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7957742aaa434cb%3A0x799c3534277d7e53!2sBARBEARIA%20DUBAY!5e0!3m2!1spt-BR!2sbr!4v1737317424977!5m2!1spt-BR!2sbr" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
 
+<section class="end-section py-5">
+    <div class="container text-center">
+        <div class="address-icon">
+            <img src="{{ asset('image/end.png') }}" alt="final">
+        </div>
+    </div>
+</section>
 
 
 

@@ -555,6 +555,132 @@ gap: 10px;
 .payment-icons img:hover {
     transform: scale(1.2); /* Aumenta levemente ao passar o mouse */
 }
+/* Estilo da seção de contatos */
+.contact-section {
+    background-color: #000; /* Fundo preto */
+    padding: 40px 20px;
+    text-align: center;
+}
 
+/* Título */
+.contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00; /* Destaque amarelo */
+    margin-bottom: 30px;
+}
+
+/* Item de contato */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Texto branco */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ffcc00; /* Amarelo no hover */
+}
+
+/* Ícones */
+.contact-item img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffcc00; /* Fundo amarelo */
+    padding: 10px;
+}
+
+/* Estilo da seção de localização */
+.location-section {
+    background-color: #000; /* Fundo preto */
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Título */
+.location-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.location-title span {
+    color: #ffcc00; /* Destaque amarelo */
+}
+
+/* Estilo do endereço */
+.location-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.address-icon {
+   align-self: self-start;
+}
+.address-icon img {
+    width: 40px;
+    height: auto;
+}
+
+.address-text {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: left; /* Centraliza o título */
+}
+
+/* Mapa Responsivo */
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px; /* Borda arredondada */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Estilo da seção de finalização */
+.end-section {
+    background-color: #000; /* Fundo preto */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Estilo do ícone de endereço */
+.address-icon img {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    width:100px ; /* Mantém a proporção da imagem */
+    height: auto;
+}
 
 
