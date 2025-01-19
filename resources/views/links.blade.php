@@ -66,15 +66,18 @@
             }
             
 
-            // Detecta o sistema operacional do dispositivo
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            if (/android/i.test(userAgent)) {
-                console.log("Acesso via Android");
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                console.log("Acesso via iOS");
-            } else {
-                console.log("Acesso via outro dispositivo");
-            }
+          // Detecta o sistema operacional do dispositivo
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        let message = "Você está acessando via outro dispositivo.";
+
+        if (/android/i.test(userAgent)) {
+            message = "Você está acessando via Android.";
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            message = "Você está acessando via iOS.";
+        }
+
+        // Exibe o alert box com a mensagem
+        alert(message);
         };
     </script>
 </body>
